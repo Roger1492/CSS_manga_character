@@ -3,7 +3,6 @@
   position: relative;
   width: 400px;
   height:500px;
-  /* border: 1px solid gray; */
 }
 .head{
   position: absolute;
@@ -55,6 +54,30 @@
   background: black;
   border-radius: 50%;
 }
+.wrap:hover .eyeball{
+  animation: run 1s infinite linear;
+}
+@-webkit-keyframes run {
+  0% { transform: translate(0px,0px); }
+  50% { transform: translate(-7px,10px); }
+  99% { transform: translate(-15px,0px); }
+}
+@-moz-keyframes run {
+  0% { transform: translate(0px,0px); }
+  50% { transform: translate(-7px,10px); }
+  99% { transform: translate(-15px,0px); }
+}
+@-ms-keyframes run {
+  0% { transform: translate(0px,0px); }
+  50% { transform: translate(-7px,10px); }
+  99% { transform: translate(-15px,0px); }
+}
+@keyframes run {
+  0% { transform: translate(0px,0px); }
+  50% { transform: translate(-7px,10px); }
+  99% { transform: translate(-15px,0px); }
+}
+
 .nose{
   position: absolute;
   left: 78px;
@@ -90,7 +113,6 @@
   top: 30px;
   width: 130px;
   height: 80px;
-  /* border: 1px solid gray; */
   z-index: 1;
 }
 .whiskers > span{
