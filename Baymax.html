@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Baymax</title>
+  <style type="text/css">
+    body{
+  background:#888;
+}
+.wrap{
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  height:600px;
+}
+.head{
+  position: absolute;
+  left: 200px;
+  width: 100px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 -6px 0 0 #ddd;
+}
+.eyes{
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  width: 12px;
+  height: 12px;
+  background: #222;
+  border-radius: 50%;
+}
+.eyer{
+  left: 70px;
+}
+.nose{
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  height: 2px;
+  width: 50px;
+  background: #222;
+}
+.body{
+  position: absolute;
+  top: 45px;
+  left: 160px;
+  width: 180px;
+  height: 150px;
+  background:#fff;
+  border-radius:47%;
+  box-shadow: inset 5px 0px 0 0 #ddd,inset -5px 0px 0 0 #ddd;;
+  z-index: -1;
+}
+.belly{
+  position: absolute;
+  background:#fff;
+  border-radius:47%;
+  top: 120px;
+  left: 120px;
+  width: 250px;
+  height: 300px;
+  box-shadow: inset 5px -5px 0 0 #ddd,inset -5px -5px 0 0 #ddd,inset 5px 5px 0 0 #ddd,inset -5px 5px 0 0 #ddd;
+  z-index: -2;
+}
+.line{
+  position: absolute;
+  top: 100px;
+  left: 8px;
+  width: 160px;
+  height: 50px;
+  background: #fff;
+}
+.heart{
+  position: absolute;
+  left: 110px;
+  top: 40px;
+  width: 30px;
+  height: 30px;
+  border:1px solid #ddd;
+  border-radius: 50%;
+  box-shadow:inset 5px 5px 0 0 #ddd;
+}
+.hand{
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(20deg) translate(105px,30px);
+  z-index: -3;
+}
+.handr{
+  left: 150px;
+  background: #fff;
+  z-index: 99;
+  z-index: -5;
+  transform: rotate(-14deg) translate(90px,100px);
+}
+.finger{
+  position: absolute;
+  top: 280px;
+  left: 65px;
+  width: 20px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(-48deg);
+}
+.small_finger{
+  position: absolute;
+  top: 275px;
+  left: 85px;
+  width: 15px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  transform: rotate(-43deg);
+}
+.handr > .finger{
+  position: absolute;
+  left: 63px;
+  transform: rotate(45deg);
+}
+.handr > .small_finger{
+  position: absolute;
+  left: 47px;
+  transform: rotate(45deg);
+}
+.leg{
+  position: absolute;
+  left: 160px;
+  top: 370px;
+  width: 78px;
+  height: 120px;
+  background: #fff;
+  z-index: -9;
+  border-radius: 0 0 5px 40px;
+}
+.legr{
+  left: 240px;
+  border-radius: 0 0 40px 5px;
+}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="eyes eyel"></div>
+    <div class="eyes eyer"></div>
+    <div class="nose"></div>
+  </div>
+  <div class="body">
+    <div class="line"></div>
+    <div class="heart"></div>
+  </div>
+  <div class="belly">
+  </div>
+  <div class="hand">
+    <div class="finger"></div>
+    <div class="small_finger"></div>
+  </div>
+  <div class="hand handr">
+    <div class="finger"></div>
+    <div class="small_finger"></div>
+  </div>
+  <div class="leg legl"></div>
+  <div class="leg legr"></div>
+</div>
+</body>
+</html>
