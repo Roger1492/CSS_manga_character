@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>超级马里奥</title>
+    <style>
+    body {
+        background: gray;
+    }
+    
+    .mario {
+        margin: 100px auto;
+        width: 30px;
+        height: 30px;
+        background: #E73324;
+        box-shadow: 30px 0 0 0 #E73324, 60px 0 0 0 #E73324, 90px 0 0 0 #E73324, 120px 0 0 0 #E73324, 150px 0 0 0 #E73324, -30px 30px 0 0 #E73324, 0 30px 0 0 #E73324, 30px 30px 0 0 #E73324, 60px 30px 0 0 #E73324, 90px 30px 0 0 #E73324, 120px 30px 0 0 #E73324, 150px 30px 0 0 #E73324, 180px 30px 0 0 #E73324, 210px 30px 0 0 #E73324, 240px 30px 0 0 #E73324, -30px 60px 0 0 #6C6636, 0 60px 0 0 #6C6636, 30px 60px 0 0 #6C6636, 60px 60px 0 0 #FEB570, 90px 60px 0 0 #FEB570, 120px 60px 0 0 #FEB570, 150px 60px 0 0 #6C6636, 180px 60px 0 0 #FEB570, -60px 90px 0 0 #6C6636, -30px 90px 0 0 #FEB570, 0 90px 0 0 #6C6636, 30px 90px 0 0 #FEB570, 60px 90px 0 0 #FEB570, 90px 90px 0 0 #FEB570, 120px 90px 0 0 #FEB570, 150px 90px 0 0 #6C6636, 180px 90px 0 0 #FEB570, 210px 90px 0 0 #FEB570, 240px 90px 0 0 #FEB570, -60px 120px 0 0 #6C6636, -30px 120px 0 0 #FEB570, 0 120px 0 0 #6C6636, 30px 120px 0 0 #6C6636, 60px 120px 0 0 #FEB570, 90px 120px 0 0 #FEB570, 120px 120px 0 0 #FEB570, 150px 120px 0 0 #FEB570, 180px 120px 0 0 #6C6636, 210px 120px 0 0 #FEB570, 240px 120px 0 0 #FEB570, 270px 120px 0 0 #FEB570, -60px 150px 0 0 #6C6636, -30px 150px 0 0 #6C6636, 0 150px 0 0 #FEB570, 30px 150px 0 0 #FEB570, 60px 150px 0 0 #FEB570, 90px 150px 0 0 #FEB570, 120px 150px 0 0 #FEB570, 150px 150px 0 0 #6C6636, 180px 150px 0 0 #6C6636, 210px 150px 0 0 #6C6636, 240px 150px 0 0 #6C6636, 0 180px 0 0 #FEB570, 30px 180px 0 0 #FEB570, 60px 180px 0 0 #FEB570, 90px 180px 0 0 #FEB570, 120px 180px 0 0 #FEB570, 150px 180px 0 0 #FEB570, 180px 180px 0 0 #FEB570, 210px 180px 0 0 #FEB570, -30px 210px 0 0 #6C6636, 0 210px 0 0 #6C6636, 30px 210px 0 0 #E73324, 60px 210px 0 0 #6C6636, 90px 210px 0 0 #6C6636, 120px 210px 0 0 #E73324, 150px 210px 0 0 #6C6636, 180px 210px 0 0 #6C6636, -60px 240px 0 0 #6C6636, -30px 240px 0 0 #6C6636, 0 240px 0 0 #6C6636, 30px 240px 0 0 #E73324, 60px 240px 0 0 #6C6636, 90px 240px 0 0 #6C6636, 120px 240px 0 0 #E73324, 150px 240px 0 0 #6C6636, 180px 240px 0 0 #6C6636, 210px 240px 0 0 #6C6636, -90px 270px 0 0 #6C6636, -60px 270px 0 0 #6C6636, -30px 270px 0 0 #6C6636, 0 270px 0 0 #6C6636, 30px 270px 0 0 #E73324, 60px 270px 0 0 #6C6636, 90px 270px 0 0 #6C6636, 120px 270px 0 0 #E73324, 150px 270px 0 0 #6C6636, 180px 270px 0 0 #6C6636, 210px 270px 0 0 #6C6636, 240px 270px 0 0 #6C6636, -90px 300px 0 0 #FEB570, -60px 300px 0 0 #FEB570, -30px 300px 0 0 #6C6636, 0 300px 0 0 #E73324, 30px 300px 0 0 #FEB570, 60px 300px 0 0 #E73324, 90px 300px 0 0 #E73324, 120px 300px 0 0 #FEB570, 150px 300px 0 0 #E73324, 180px 300px 0 0 #6C6636, 210px 300px 0 0 #FEB570, 240px 300px 0 0 #FEB570, -90px 330px 0 0 #FEB570, -60px 330px 0 0 #FEB570, -30px 330px 0 0 #FEB570, 0 330px 0 0 #E73324, 30px 330px 0 0 #E73324, 60px 330px 0 0 #E73324, 90px 330px 0 0 #E73324, 120px 330px 0 0 #E73324, 150px 330px 0 0 #E73324, 180px 330px 0 0 #FEB570, 210px 330px 0 0 #FEB570, 240px 330px 0 0 #FEB570, -90px 360px 0 0 #FEB570, -60px 360px 0 0 #FEB570, -30px 360px 0 0 #E73324, 0 360px 0 0 #E73324, 30px 360px 0 0 #E73324, 60px 360px 0 0 #E73324, 90px 360px 0 0 #E73324, 120px 360px 0 0 #E73324, 150px 360px 0 0 #E73324, 180px 360px 0 0 #E73324, 210px 360px 0 0 #FEB570, 240px 360px 0 0 #FEB570, -30px 390px 0 0 #E73324, 0 390px 0 0 #E73324, 30px 390px 0 0 #E73324, 120px 390px 0 0 #E73324, 150px 390px 0 0 #E73324, 180px 390px 0 0 #E73324, -60px 420px 0 0 #6C6636, -30px 420px 0 0 #6C6636, 0 420px 0 0 #6C6636, 150px 420px 0 0 #6C6636, 180px 420px 0 0 #6C6636, 210px 420px 0 0 #6C6636, -90px 450px 0 0 #6C6636, -60px 450px 0 0 #6C6636, -30px 450px 0 0 #6C6636, 0 450px 0 0 #6C6636, 150px 450px 0 0 #6C6636, 180px 450px 0 0 #6C6636, 210px 450px 0 0 #6C6636, 240px 450px 0 0 #6C6636;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="mario"></div>
+</body>
+
+</html>
