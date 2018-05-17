@@ -25,6 +25,13 @@ section{
     background: lightgreen;
 }
 
+.ellipse{
+    width: 150px;
+    height: 100px;
+    background: lightgreen;
+    border-radius: 50%;
+}
+
 .triangle-top{
     width: 0;
     height: 0;
@@ -94,6 +101,8 @@ section{
 }
 
 .parallelogram{
+    position: relative;
+    left: 50px;
     width: 150px;
     height: 100px;
     background: lightgreen;
@@ -116,8 +125,8 @@ section{
     content: "";
     position: absolute;
     transform: rotate(-69deg);
-    top: -120px;
-    left: -115px;
+    top: -111px;
+    left: -129px;
     width: 0;
     height: 0;
     border-top: 100px solid lightgreen;
@@ -127,12 +136,14 @@ section{
 .star-five::before{
     content: "";
     position: absolute;
-    transform: rotate(-34deg);
+    transform: rotate(-35deg);
+    top: -54px;
+    left: 3px;
     width: 0;
     height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-top: 70px solid lightseagreen;
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    border-top: 120px solid lightgreen;
 }
 
 .star-six{
@@ -147,10 +158,105 @@ section{
 .star-six::after{
     content: "";
     position: absolute;
-    transform: translate(-100px, 60px);
+    transform: translate(-100px, 65px);
+    top: -3px;
     width: 0;
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-top: 200px solid lightgreen;
+}
+
+.pentagon{
+    width: 100px;
+    height: 0;
+    border-left:  50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid lightgreen;
+}
+.pentagon::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50px, -175px);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 75px solid lightgreen;
+}
+
+.hexagon{
+    position: relative;
+    top: -200px;
+    width: 200px;
+    height: 100px;
+    background: lightgreen;
+}
+.hexagon::before{
+    content: "";
+    position: absolute;
+    transform: translate(0px,-60px);
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 60px solid lightgreen;
+}
+
+.hexagon::after{
+    content: "";
+    position: absolute;
+    transform: translate(0px,100px);
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 60px solid lightgreen;
+}
+
+.octagon{
+    position: relative;
+    top: -200px;
+    width: 200px;
+    height: 70px;
+    background: lightgreen;
+}
+.octagon::before{
+    content: "";
+    position: absolute;
+    transform: translate(0px,-60px);
+    width: 95px;
+    height: 0;
+    border-left: 53px solid transparent;
+    border-right: 53px solid transparent;
+    border-bottom: 60px solid lightgreen;
+}
+.octagon::after{
+    content: "";
+    position: absolute;
+    transform: translate(0px,70px);
+    width: 95px;
+    height: 0;
+    border-left: 53px solid transparent;
+    border-right: 53px solid transparent;
+    border-top: 60px solid lightgreen;
+}
+
+.heart{
+    width: 120px;
+    height: 200px;
+    position: relative;
+    left: 40px;
+    transform: rotate(-45deg);
+    background: lightgreen;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.heart::before{
+    content: "";
+    position: absolute;
+    transform: rotate(90deg) translate(40px, -41px);
+    width: 120px;
+    height: 200px;
+    background: lightgreen;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }

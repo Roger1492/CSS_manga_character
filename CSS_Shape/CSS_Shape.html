@@ -50,6 +50,20 @@
             </section>
         </div>
         <div class="shape">
+            <section class="ellipse"></section>
+            <section>
+                <pre><code>
+                    // 椭圆
+                    .ellipse{
+                        width: 150px;
+                        height: 100px;
+                        background: lightgreen;
+                        border-radius: 50%;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
             <section class="triangle-top"></section>
             <section>
                 <pre><code>
@@ -187,6 +201,8 @@
                 <pre><code>
                     // 平行四边形
                     .parallelogram{
+                        position: relative;
+                        left: 50px;
                         width: 150px;
                         height: 100px;
                         background: lightgreen;
@@ -201,22 +217,40 @@
                 <pre><code>
                         // 五角星
                         .star-five{
+                            position: relative;
+                            left: 0;
+                            top: 0;
                             width: 0;
                             height: 0;
-                            transform: rotate(-146deg) translate(10px, 10px);
-                            border-top: 100px solid rgba(0, 255, 0, .5);
+                            top: -100px;
+                            transform: rotate(-145.5deg);
+                            border-top: 100px solid lightgreen;
                             border-left: 145px solid transparent;
                             border-right: 145px solid transparent;
                         }
                         .star-five::after{
                             content: "";
                             position: absolute;
-                            transform: rotate(-69deg) translate(72px, -150px);
+                            transform: rotate(-69deg);
+                            top: -111px;
+                            left: -129px;
                             width: 0;
                             height: 0;
-                            border-top: 100px solid rgba(255, 0, 0, .5);;
+                            border-top: 100px solid lightgreen;
                             border-left: 145px solid transparent;
                             border-right: 145px solid transparent;
+                        }
+                        .star-five::before{
+                            content: "";
+                            position: absolute;
+                            transform: rotate(-35deg);
+                            top: -54px;
+                            left: 3px;
+                            width: 0;
+                            height: 0;
+                            border-left: 48px solid transparent;
+                            border-right: 48px solid transparent;
+                            border-top: 120px solid lightgreen;
                         }
                 </code></pre>
             </section>
@@ -227,6 +261,8 @@
                 <pre><code>
                     // 六角星
                     .star-six{
+                        position: relative;
+                        transform: translateY(-60px);
                         width: 0;
                         height: 0;
                         border-left: 100px solid transparent;
@@ -236,12 +272,135 @@
                     .star-six::after{
                         content: "";
                         position: absolute;
-                        transform: translate(-100px, 60px);
+                        transform: translate(-100px, 65px);
+                        top: -3px;
                         width: 0;
                         height: 0;
                         border-left: 100px solid transparent;
                         border-right: 100px solid transparent;
                         border-top: 200px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="pentagon"></section>
+            <section>
+                <pre><code>
+                    // 五边形（五角大楼）
+                    .pentagon{
+                        width: 100px;
+                        height: 0;
+                        border-left:  50px solid transparent;
+                        border-right: 50px solid transparent;
+                        border-top: 100px solid lightgreen;
+                    }
+                    .pentagon::before{
+                        content: "";
+                        position: absolute;
+                        transform: translate(-50px, -175px);
+                        border-left: 100px solid transparent;
+                        border-right: 100px solid transparent;
+                        border-bottom: 75px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="hexagon"></section>
+            <section>
+                <pre><code>
+                    // 六边形
+                    .hexagon{
+                        position: relative;
+                        top: -200px;
+                        width: 200px;
+                        height: 100px;
+                        background: lightgreen;
+                    }
+                    .hexagon::before{
+                        content: "";
+                        position: absolute;
+                        transform: translate(0px,-60px);
+                        width: 0;
+                        height: 0;
+                        border-left: 100px solid transparent;
+                        border-right: 100px solid transparent;
+                        border-bottom: 60px solid lightgreen;
+                    }
+                    
+                    .hexagon::after{
+                        content: "";
+                        position: absolute;
+                        transform: translate(0px,100px);
+                        width: 0;
+                        height: 0;
+                        border-left: 100px solid transparent;
+                        border-right: 100px solid transparent;
+                        border-top: 60px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="octagon"></section>
+            <section>
+                <pre><code>
+                    // 八角形
+                    .octagon{
+                        position: relative;
+                        top: -200px;
+                        width: 200px;
+                        height: 70px;
+                        background: lightgreen;
+                    }
+                    .octagon::before{
+                        content: "";
+                        position: absolute;
+                        transform: translate(0px,-60px);
+                        width: 95px;
+                        height: 0;
+                        border-left: 53px solid transparent;
+                        border-right: 53px solid transparent;
+                        border-bottom: 60px solid lightgreen;
+                    }
+                    .octagon::after{
+                        content: "";
+                        position: absolute;
+                        transform: translate(0px,70px);
+                        width: 95px;
+                        height: 0;
+                        border-left: 53px solid transparent;
+                        border-right: 53px solid transparent;
+                        border-top: 60px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="heart"></section>
+            <section>
+                <pre><code>
+                    // 心型
+                    .heart{
+                        width: 120px;
+                        height: 200px;
+                        position: relative;
+                        left: 40px;
+                        transform: rotate(-45deg);
+                        background: lightgreen;
+                        border-top-left-radius: 50%;
+                        border-top-right-radius: 50%;
+                    }
+                    .heart::before{
+                        content: "";
+                        position: absolute;
+                        transform: rotate(90deg) translate(40px, -41px);
+                        width: 120px;
+                        height: 200px;
+                        background: lightgreen;
+                        border-top-left-radius: 50%;
+                        border-top-right-radius: 50%;
                     }
                 </code></pre>
             </section>
