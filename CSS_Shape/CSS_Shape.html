@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用CSS绘制各种图形</title>
+    <link rel="stylesheet" href="shape.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="shape">
+            <section class="rectangle"></section>
+            <section>
+                <pre><code>
+                        // 长方形
+                        .rectangle{
+                            width: 150px;
+                            height: 100px;
+                            background: lightgreen;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="square"></section>
+            <section>
+                <pre><code>
+                        // 正方形
+                        .square{
+                            width: 100px;
+                            height: 100px;
+                            background: lightgreen;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="circle"></section>
+            <section>
+                <pre><code>
+                        // 圆形
+                        .circle{
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            background: lightgreen;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-top"></section>
+            <section>
+                <pre><code>
+                    // 三角形（上）
+                    .triangle-top{
+                        width: 0;
+                        height: 0;
+                        border-left: 50px solid transparent;
+                        border-right: 50px solid transparent;
+                        border-bottom: 100px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-down"></section>
+            <section>
+                <pre><code>
+                    // 三角形（下）
+                    .triangle-down{
+                        width: 0;
+                        height: 0;
+                        border-left: 50px solid transparent;
+                        border-right: 50% solid transparent;
+                        border-top: 100px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-left"></section>
+            <section>
+                <pre><code>
+                        // 三角形（左）
+                        .triangle-left{
+                            width: 0;
+                            height: 0;
+                            border-top: 50px solid transparent;
+                            border-bottom: 50px solid transparent;
+                            border-right: 100px solid lightgreen;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-right"></section>
+            <section>
+                <pre><code>
+                        // 三角形（右）
+                        .triangle-right{
+                            width: 0;
+                            height: 0;
+                            border-top: 50px solid transparent;
+                            border-bottom: 50px solid transparent;
+                            border-left: 100px solid lightgreen;
+                        }
+                        
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-top-left"></section>
+            <section>
+                    <pre><code>
+                        // 三角形（左上）
+                        .triangle-top-left{
+                            width: 0;
+                            height: 0;
+                            border-top: 100px solid lightgreen;
+                            border-right: 100px solid transparent;
+                        }
+                    </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-top-right"></section>
+            <section>
+                <pre><code>
+                        // 三角形（右上）
+                        .triangle-top-right{
+                            width: 0;
+                            height: 0;
+                            border-top: 100px solid lightgreen;
+                            border-left: 100px solid transparent;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-bottom-left"></section>
+            <section>
+                <pre><code>
+                        // 三角形（左下）
+                        .triangle-bottom-left{
+                            width: 0;
+                            height: 0;
+                            border-bottom: 100px solid lightgreen;
+                            border-right:  100px solid transparent;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="triangle-bottom-right"></section>
+            <section>
+                <pre><code>
+                        // 三角形（右下）
+                        .triangle-bottom-right{
+                            width: 0;
+                            height: 0;
+                            border-bottom: 100px solid lightgreen;
+                            border-left: 100px solid transparent;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="ladder-shaped"></section>
+            <section>
+                <pre><code>
+                    // 梯形
+                    .ladder-shaped{
+                        width: 100px;
+                        height: 0;
+                        border-left:  50px solid transparent;
+                        border-right: 50px solid transparent;
+                        border-bottom: 100px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="parallelogram"></section>
+            <section>
+                <pre><code>
+                    // 平行四边形
+                    .parallelogram{
+                        width: 150px;
+                        height: 100px;
+                        background: lightgreen;
+                        transform: skew(35deg);
+                    }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="star-five"></section>
+            <section>
+                <pre><code>
+                        // 五角星
+                        .star-five{
+                            width: 0;
+                            height: 0;
+                            transform: rotate(-146deg) translate(10px, 10px);
+                            border-top: 100px solid rgba(0, 255, 0, .5);
+                            border-left: 145px solid transparent;
+                            border-right: 145px solid transparent;
+                        }
+                        .star-five::after{
+                            content: "";
+                            position: absolute;
+                            transform: rotate(-69deg) translate(72px, -150px);
+                            width: 0;
+                            height: 0;
+                            border-top: 100px solid rgba(255, 0, 0, .5);;
+                            border-left: 145px solid transparent;
+                            border-right: 145px solid transparent;
+                        }
+                </code></pre>
+            </section>
+        </div>
+        <div class="shape">
+            <section class="star-six"></section>
+            <section>
+                <pre><code>
+                    // 六角星
+                    .star-six{
+                        width: 0;
+                        height: 0;
+                        border-left: 100px solid transparent;
+                        border-right: 100px solid transparent;
+                        border-bottom: 200px solid lightgreen;
+                    }
+                    .star-six::after{
+                        content: "";
+                        position: absolute;
+                        transform: translate(-100px, 60px);
+                        width: 0;
+                        height: 0;
+                        border-left: 100px solid transparent;
+                        border-right: 100px solid transparent;
+                        border-top: 200px solid lightgreen;
+                    }
+                </code></pre>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
