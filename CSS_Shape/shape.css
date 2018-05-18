@@ -2,6 +2,15 @@
     border-bottom: 1px solid lightgray;
 }
 
+.shape > section:nth-of-type(1){
+    width: 300px;
+    min-height: 200px;
+}
+
+.shape div{
+    margin: 40px auto;
+}
+
 section{
     display: inline-block;
 }
@@ -30,6 +39,21 @@ section{
     height: 100px;
     background: lightgreen;
     border-radius: 50%;
+}
+
+.sector{
+    width: 0;
+    height: 0;
+    border: 100px solid;
+    border-color: lightgreen transparent transparent transparent ;
+    border-radius: 100%;
+}
+
+.circle-tempy{
+    width: 120px;
+    height: 120px;
+    border: 30px solid lightgreen;
+    border-radius: 100%;
 }
 
 .triangle-top{
@@ -102,17 +126,13 @@ section{
 
 .parallelogram{
     position: relative;
-    left: 50px;
     width: 150px;
     height: 100px;
     background: lightgreen;
     transform: skew(35deg);
 }
 
-.star-five{
-    position: relative;
-    left: 0;
-    top: 0;
+.star-5{
     width: 0;
     height: 0;
     top: -100px;
@@ -121,7 +141,7 @@ section{
     border-left: 145px solid transparent;
     border-right: 145px solid transparent;
 }
-.star-five::after{
+.star-5::after{
     content: "";
     position: absolute;
     transform: rotate(-69deg);
@@ -133,7 +153,7 @@ section{
     border-left: 145px solid transparent;
     border-right: 145px solid transparent;
 }
-.star-five::before{
+.star-5::before{
     content: "";
     position: absolute;
     transform: rotate(-35deg);
@@ -146,8 +166,7 @@ section{
     border-top: 120px solid lightgreen;
 }
 
-.star-six{
-    position: relative;
+.star-6{
     transform: translateY(-60px);
     width: 0;
     height: 0;
@@ -155,7 +174,7 @@ section{
     border-right: 100px solid transparent;
     border-bottom: 200px solid lightgreen;
 }
-.star-six::after{
+.star-6::after{
     content: "";
     position: absolute;
     transform: translate(-100px, 65px);
@@ -165,6 +184,42 @@ section{
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-top: 200px solid lightgreen;
+}
+
+.star-8{
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+}
+.star-8::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+    transform: rotate(45deg);
+}
+    
+.star-12{
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+}
+.star-12::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+    transform: rotate(30deg);
+}
+.star-12::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: lightgreen;
+    transform: rotate(-30deg);
 }
 
 .pentagon{
@@ -177,15 +232,13 @@ section{
 .pentagon::before{
     content: "";
     position: absolute;
-    transform: translate(-50px, -175px);
+    transform: translate(-50px, -174px);
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-bottom: 75px solid lightgreen;
 }
 
 .hexagon{
-    position: relative;
-    top: -200px;
     width: 200px;
     height: 100px;
     background: lightgreen;
@@ -213,8 +266,6 @@ section{
 }
 
 .octagon{
-    position: relative;
-    top: -200px;
     width: 200px;
     height: 70px;
     background: lightgreen;
@@ -244,19 +295,167 @@ section{
     width: 120px;
     height: 200px;
     position: relative;
-    left: 40px;
     transform: rotate(-45deg);
     background: lightgreen;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
 }
 .heart::before{
     content: "";
     position: absolute;
-    transform: rotate(90deg) translate(40px, -41px);
+    transform: rotate(90deg) translate(40px, -40px);
     width: 120px;
     height: 200px;
     background: lightgreen;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+}
+
+.egg{
+    width: 120px;
+    height: 200px;
+    background: lightgreen;
+    border-radius: 50% / 60% 60% 40% 40%;
+}
+
+.infinity{
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+.infinity::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 20px solid lightgreen;
+    border-radius: 50% 50% 0 50%;
+    background: white;
+    transform: rotate(-45deg);
+}
+.infinity::after{
+    content: "";
+    position: absolute;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+    border: 20px solid lightgreen;
+    border-radius: 50% 50% 50% 0;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.pacman{
+    width: 0;
+    height: 0;
+    border-top: 50px solid lightgreen;
+    border-bottom: 50px solid lightgreen;
+    border-right: 50px solid lightgreen;
+    border-left: 50px solid transparent;
+    border-radius: 50%;
+}
+
+.talkbubble{
+    width: 200px;
+    height: 80px;
+    background: lightgreen;
+    border-radius: 10px;
+    position: relative;
+}
+.talkbubble::before{
+    content: "";
+    position: absolute;
+    transform: rotate(15deg);
+    left: 182px;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-left: 47px solid lightgreen;
+    border-top: 30px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+.diamond{
+    position: relative;
+    top: -50px;
+    width: 50px;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid lightgreen;
+}
+.diamond::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 135px solid lightgreen;
+}
+
+.yin-yang{
+    position: relative;
+    width: 160px;
+    height: 80px;
+    border: solid lightgreen;
+    border-width: 2px 2px 80px 2px;
+    border-radius: 100%;
+}
+.yin-yang::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    background: lightgreen;
+    border-radius: 100%;
+    border: 28px solid white;
+}
+.yin-yang::after{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 100%;
+    border: 28px solid lightgreen;
+}
+
+.cross{
+    width: 120px;
+    height: 30px;
+    background: lightgreen;
+}
+.cross::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    transform: rotate(90deg);
+    background: lightgreen;
+}
+
+.flower-4{
+    position: relative;
+    top: 9px;
+    width: 80px;
+    height: 80px;
+    background: lightgreen;
+    border-radius: 100%;
+    box-shadow: 80px 0 0 lightgreen, 42px -39px 0 0 lightgreen, 40px 40px 0 0 lightgreen;
+}
+
+.moon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 100%;
+    box-shadow: inset 30px -10px 0 0 lightgreen;
 }
